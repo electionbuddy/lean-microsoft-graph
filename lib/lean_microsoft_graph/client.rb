@@ -16,6 +16,10 @@ module LeanMicrosoftGraph
       Resources::UsersResource.new(connection)
     end
 
+    def groups
+      Resources::GroupsResource.new(connection)
+    end
+
     private
 
     def connection

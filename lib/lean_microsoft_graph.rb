@@ -14,4 +14,7 @@ module LeanMicrosoftGraph
   require 'lean_microsoft_graph/resources/users_resource'
   require 'lean_microsoft_graph/resources/users_resource/user'
   require 'lean_microsoft_graph/resources/users_resource/users'
+  require 'lean_microsoft_graph/resources/groups_resource'
+  require 'lean_microsoft_graph/resources/groups_resource/member'
+  require 'lean_microsoft_graph/resources/groups_resource/members'
 end
