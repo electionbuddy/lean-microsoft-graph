@@ -28,6 +28,14 @@ module LeanMicrosoftGraph
 
         User.new(response)
       end
+
+      def check_member_groups(user_id, group_ids)
+        response = post_request("users/#{user_id}/checkMemberGroups", { groupIds: group_ids }.to_json) do |req|
+          req.headers['Content-Type'] = 'application/json'
+        end
+
+        response[:value] || []
+      end
     end
   end
 end
